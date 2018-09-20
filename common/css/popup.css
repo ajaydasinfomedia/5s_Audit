@@ -1,0 +1,169 @@
+/*New popup starts*/
+.introduce_contents{float:left;width:686px;overflow:hidden; background:#efefef;}
+.introduce_contents .invite_content_box{float:left;width:686px;padding:7px 0 0}
+.introduce_contents .left_cont_box{float:left;width:655px;padding:6px 0 0 18px}
+.introduce_contents .left_cont_box.feedback1{width:490px;padding:6px 0 0 18px}
+
+.form_area{float:left;width:100%}
+.form_area form{float:left;width:100%}
+.form_area form .top_block{float:left;width:100%}
+.form_area form span{float:left;width:580px;font-size:12px;line-height:18px;color:#505050;padding-bottom:18px}
+.form_area form span.test{color:#FF0000;padding-bottom:5px}
+.form_area form span.small_head{ font-size:14px; line-height:22px;color:#c93a0e;padding-bottom:5px; font-weight:bold; padding:0 0 10px 0}
+.form_area form span.mendatory{color:#505050;float:right;line-height:18px;padding:5px 0px 15px 0;text-align:right;width:160px}
+.form_area form span.mendatory.pad_none{padding:0 15px 0 0;}
+
+.form_area form .forgot_pass{float:left;width:230px;margin-left:207px;display:inline}
+.form_area form .forgot_pass a{font-size:11px;line-height:18px;color:#c8580d;text-decoration:underline}
+.form_area form .forgot_pass a:hover{font-size:11px;line-height:18px;color:#c8580d;text-decoration:none}
+.form_area form .form_row_suggestion2{float:left;width:650px;padding-bottom:18px;text-align:left}
+.form_area form .form_row_suggestion2 .input_bg2{float:left;width:330px;height:95px;border:1px solid #bebebe;}
+.form_area form .form_row_suggestion2 .input_bg2 textarea{float:left;width:310px;height:73px;border:1px solid #fff;font-size:11px;color:#505050;margin:10px 0 0 7px;padding:2px 0 2px 5px}
+.form_area form .bottom_sec{ position:relative; border-top: 1px solid #DEDEDE; float:left; width:644px; padding:25px 0 20px;}
+.form_area form .bottom_sec h3{float:left;width:auto;color:#373737;font-size:20px;position:absolute;left:280px; top:-10px; background:#efefef;}
+.form_area form h3.pad_none{padding:0 0 10px}
+.form_area form .form_row_outer{float:left;width:642px;background:#bc4d27;border:1px solid #e79e85; border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px; margin-bottom:20px;}
+.form_area form .form_row{float:left;width:100%;padding-bottom:8px}
+.form_area form .radio_text{float:left;width:204px;line-height:18px;color:#505050;padding:0 0 0 5px}
+.form_area form .radio_text2{float:left;width:204px;font-size:14px;line-height:18px;color:#fff; font-weight:bold;padding:10px 0 0 5px}
+.form_area form .note{float:left;width:95%;line-height:18px;color:#fff;padding:0 10px 10px}
+.form_area form .note strong{font-weight:bold;}
+.form_area form .mendatory{float:right;width:auto;font-size:12px;line-height:19px;color:#000;padding:0 10px 0 0}
+.form_area form .mendatory span{float:left;width:auto;color:red;padding:0 2px 0 0}
+.form_area form .mendatory_txt{float:right;width:160px;font-size:12px;line-height:18px;color:#000;text-align:right;padding:0 0px 0 0}
+.form_area form .mendatory_txt span{float:left;width:auto;font-size:12px;color:red;padding:0 2px 0 0}
+.form_area form .form_row.pad_none{padding:0}
+.form_area form .form_row_in2.pad_none{padding:10px 0 0}
+.form_area form .image_row{ float:left; width:100%; text-align:center; background:#efefef; padding:10px 0; border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;-o-border-radius:0 0 5px 5px; }
+.form_area form label{float:left;width:100%; font-size:12px;font-weight:bold;line-height:19px;color:#555555;padding:0}
+.form_area form label span{float:left;width:auto;color:red; padding:0 2px 0 0}
+.form_area form .radio_button{float:left;width:13px;height:13px;margin:12px 0 0 5px;background:none;border:none}
+.form_area form .outer_input{float:left;width:100%}
+.form_area form input{float:left;width:396px;font-size:12px;height:25px;padding:3px;margin:4px 0;border:1px solid #d0d0d0;background:#fff;line-height:25px;color:#000; border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;}
+.form_area form .submit_button{float:left;width:173px;height:38px;background:url(../images/send_invitation.gif) no-repeat 0 0;cursor:pointer;border:none;margin:0 15px 0 0}
+.form_area form .cancel_button{float:left;width:98px;height:38px;background:url(../images/send_invitation.gif) no-repeat -188px 0;cursor:pointer;border:none;margin:0}
+.form_area form .texarea{float:left;width:460px;font-size:12px;height:60px;padding:3px;margin:4px 0;border:1px solid #d0d0d0;background:#fff;line-height:25px;color:#000; border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;}
+.form_row_introduce{float:left;width:350px;padding-bottom:18px;text-align:left}
+.form_area form .bg_list_small{float:left;width:200px;height:25px;padding:3px;border:1px solid #d0d0d0;background:#fff;line-height:25px;color:#000; border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;}
+.form_area form .bg_list_small select{float:left;width:190px; font-size:12px;color:#000;line-height:18px;display:inline; margin:5px 0 0 5px; background:none; border:none}
+.form_area form .form_row_submit{ float:left;width:50%;padding:10px 0 10px 202px;}
+.form_area form .form_row_submit .import_contact_btn{float:left;width:173px;height:38px;background:url(../images/send_invitation.gif) no-repeat 0 -39px;cursor:pointer;border:none;margin:0 15px 0 0}
+.form_area form .form_row_submit .cancel_button1{float:left;width:98px;height:38px;background:url(../images/send_invitation.gif) no-repeat -188px 0;cursor:pointer;border:none;margin:0}
+.form_area form .notes_row{float:left;width:100%;padding-bottom:18px;color:#000;font-size:12px;line-height:19px}
+.form_area form .notes_row .img_cont1{float:left;width:auto;display:inline;margin:0 0 0 10px}
+.form_area form .notes_row .img_cont2{float:left;width:auto;display:inline;margin:20px 0 0}
+.form_area form .form_row_feedback .textarea11{float:left;width:311px;padding:3px;border:1px solid #BEBEBE;line-height:18px;height:150px;color:#505050;font-size:11px;}
+.form_area form .form_row_feedback{float:left;width:580px;padding-bottom:18px;text-align:left}
+.form_area form .form_row_feedback textarea{float:left;width:397px;font-size:12px;height:70px;padding:3px;margin:4px 0;border:1px solid #d0d0d0;background:#fff;line-height:25px;color:#000; border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;}
+.form_area form .bot_btn{ width:400px;}
+.form_area form .form_row_suggestion .submit_button{ float:left;background:url(../images/submit.jpg) no-repeat 0 0;width:133px;height:38px;border:none;cursor:pointer; font-size:22px; line-height:38px; color:#fff;}
+.form_area form .form_row_suggestion .cancel_button{float:left;width:98px;height:38px;background:url(../images/send_invitation.gif) no-repeat -188px 0;cursor:pointer;border:none;margin:0}
+.form_area form h3.feedback_head{float:left;width:auto; font-size:20px;color:#373737; line-height:24px;}
+/**New Popup Css Ends**/
+
+
+
+.form_area form .form_row .friends_mail_col{float:left;width:260px;padding-bottom:18px;padding-left:25px}
+.form_area form .form_row .friends_mail_col label{float:left;width:17px;font-size:11px;text-align:center;line-height:18px;color:#505050;padding:9px 0 0}
+.form_area form .form_row .friends_mail_col label span{float:left;width:auto;font-size:11px;color:red;padding:0 2px 0 0}
+.form_area form .form_row .friends_mail_col .input_bg{float:left;width:215px;height:38px;background:url(../images/friends_email_bg.gif) no-repeat 0 0}
+.form_area form .form_row .friends_mail_col .input_bg_outer_small{float:left;width:215px}
+.form_area form .form_row .friends_mail_col input{float:left;width:190px;display:inline;border:none;background:none;line-height:18px;height:20px;color:#505050;font-size:11px;margin:10px 0 0 9px}
+
+.form_area form .form_row_introduce .input_bg2{float:left;width:330px;height:95px;border:1px solid #bebebe;}
+.form_area form .form_row_introduce .input_bg2 textarea{float:left;width:310px;height:73px;border:1px solid #fff;font-size:11px;font-family:'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;margin:10px 0 0 7px;padding:2px 0 2px 5px}
+.form_area form .form_row_introduce .submit_button2{float:left;display:inline;width:140px;height:28px;background:url(../images/submit_button.gif) no-repeat 0 0;cursor:pointer;border:none;margin:0 15px 0 0}
+.form_area form .form_row_introduce .submit_button4{float:left;display:inline;width:140px;height:28px;background:url(../images/submit_button.gif) no-repeat 0 0;cursor:pointer;border:none;margin:0 15px 0 0}
+.form_area form .form_row_suggestion{float:left;width:470px;padding-bottom:18px;text-align:left}
+.form_area form .form_row_suggestion .texarea{float:left;width:320px;background:url(../images/textarea_bg.gif) no-repeat 0 0;color:#505050;font-size:11px;padding:5px 0 0 10px}
+
+
+
+
+.form_area form .bg_list_small span.test{float:left;width:auto}
+.form_area form .input_bg_outer{float:left;width:330px}
+.form_area form .input_bg_outer span{float:left;width:auto;padding:9px 7px 0 2px}
+.form_area form .input_bg_outer span.test{float:left;font-size:11px;color:#C00}
+.form_area form .input_bg_in1{float:left;width:330px;display:inline;margin:40px 0 0}
+.form_area form .input_bg span{float:left;width:300px;font-size:11px;line-height:18px;color:#505050;padding-bottom:18px}
+.form_area form .seperator{float:left;width:605px;background:url(../images/seprator_form.gif) repeat-x 0 0;height:16px}
+.form_area form .seperator2{float:left;width:570px;background:url(../images/seprator_form.gif) repeat-x 0 0;height:16px}
+.form_area form .input_bg_small{float:left;width:173px;height:38px;background:url(../images/input_bg_small.gif) no-repeat 0 0}
+.form_area form input.small_input{float:left;width:155px;display:inline;border:none;background:none;font-size:11px;line-height:18px;height:20px;margin:10px 0 0 9px}
+.form_area form .form_row_right{float:left;width:400px}
+.form_area form .form_row_right span{float:left;width:auto;font-size:11px;line-height:18px;color:#505050;padding:9px 4px 0}
+.form_area form .select_box{float:left;width:311px;display:inline;font-size:11px;color:#505050;line-height:18px;height:20px;margin:10px 0 0 9px}
+.form_area form input.chkbox{float:left;width:14px;height:14px;margin:3px 0 0}
+.form_area form .chkbox_txt{float:left;font-size:11px;line-height:18px;color:#505050;height:20px;padding-left:4px}
+.form_area form .chkbox_txt.bottom_space{padding:0 0 15px 4px}
+.form_area form .chkbox_txt a{color:#c9590f;text-decoration:underline}
+.form_area form .chkbox_txt a:hover{color:#c9590f;text-decoration:none}
+.form_area form input.create_acc{float:left;width:166px;border:none;background:url(../images/create_acc.gif) no-repeat 0 0;font-size:15px;line-height:27px;color:#fff;height:27px;text-transform:uppercase;cursor:pointer;margin:0}
+.form_area form input.login_invoicera{float:left;width:187px;border:none;background:url(../images/login_invoicera.gif) no-repeat 0 0;font-size:15px;line-height:27px;color:#fff;height:27px;text-transform:uppercase;cursor:pointer;margin:0}
+/*Additional Features popup CSS Starts*/
+#layout_pop_up{width:100%;overflow:hidden;margin:0;background:#fff;}
+#layout_pop_up3{width:100%;overflow:hidden;margin:0;background:#fff;}
+.inner_area{ float:left;width:100%;padding-top:15px;padding-bottom:10px;background:#fff}
+.inner_area table.outer{ background:#ddd;}
+.inner_area table.inner{ float:left;width:100%;background:#fff;}
+.inner_area table.inner tr td{ padding:4px 0 3px 0}
+.inner_area table.inner tr td a{ background:url(../images/info_icon.jpg) no-repeat right 0;padding:0 20px 10px 0;color:#000;text-decoration:none;}
+.inner_area table.inner tr.head{ background:#000 url(../images/mid_bg_pop.gif) repeat-x 0 0;height:45px;font-size:15px;color:#fff;font-family:'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;padding:0 10px;}
+.inner_area table.inner tr td.feature_name{ padding-left:10px;}
+.inner_area table.inner tr td.Plan_name{ padding:5px 10px;color:#f06b10;}
+.inner_area table.inner tr td.Plan_name span{margin-top:5px;color:#fff;float:left;width:100%;text-align:center}
+.inner_area table.inner tr{background:#f2f2f2;}
+.inner_area table.inner tr td img{ margin-top:5px;}
+/*Additional Features popup CSS Ends*/
+/*popup ends*/
+
+/*Import contacts ends*/
+.import_from_address{background:#fff}
+.import_from_address .import_field{float:left;width:316px;height:23px;line-height:18px;background:url(../images/input_bg.gif) no-repeat 0 0;font-size:11px;color:#4f4f4f;display:inline;margin:0;padding:10px 5px 0 9px}
+.import_from_address .label_text{color:#505050;float:left;font-size:11px;line-height:18px;width:204px;padding:9px 0 0}
+.import_from_address .label_text2{color:#505050;float:left;font-size:11px;line-height:18px;width:204px;padding:2px 0 0}
+.import_from_address .bg_list_small{color:#505050;float:left;font-size:11px;line-height:18px;width:204px;height:33px;background:url(../images/input_bg_small.gif) no-repeat 0 0}
+.import_from_address .bg_list_small select{width:155px;display:inline;border:none;margin:10px 0 0 8px}
+.import_from_address .note_text{font-size:11px;color:#505050;line-height:18px;padding:20px 0 15px}
+.import_from_address .field_pad{padding:18px 0}
+.import_from_address .field_pad2{padding:0 0 18px}
+.import_from_address .field_pad3{width:130px;padding:24px 0 0}
+.import_from_address .form_row{float:left;width:580px;padding-bottom:18px}
+.import_from_address .form_row2{float:left;width:780px;padding-bottom:18px;padding-top:4px;height:10px}
+.import_from_address .form_row3{float:left;width:780px;padding-bottom:0;padding-top:4px;height:2px}
+.import_from_address .friends_mail_col{float:left;width:260px;padding-bottom:18px;padding-left:25px}
+.import_from_address label{float:left;font-size:11px;text-align:left;line-height:18px;width:130px;color:#505050;padding:9px 0 0}
+.import_from_address .friends_mail_col label span{float:left;width:auto;font-size:11px;color:red;padding:0 2px 0 0}
+.send_table_bg{background:#fff !important}
+.send_top_heading{color:#c04f02;font-size:14px;padding:0 0 0 7px}
+.send_top_heading2{float:left;color:#000;font-size:13px;padding:0 0 0 10px}
+.send_top_heading2 a{color:#C04F02;font-size:13px;text-decoration:underline}
+.send_top_heading2 a:hover{color:#C04F02;text-decoration:none}
+.send_label_txt{font-size:12px;color:#000;padding-left:10px;}
+.send_label_txt2{font-size:12px;color:#000;padding-left:2px;}
+.send_new_field{font-size:12px;color:#000;height:38px}
+.send_new_field .input_nw_snd{ float:left;color:#000;width:330px;margin:0;height:34px;line-height:18px; padding:5px 0 5px 9px;border:1px solid #bebebe;}
+.send_new_textarea{font-size:12px;color:#000;background:url(../images/send_new_textarea.gif) no-repeat 0 0;width:520px;height:182px;padding:0}
+.send_new_textarea textarea{ font-size:12px;color:#000;width:478px;float:left;display:inline;border:1px solid #bebebe;}
+.send_new_td_ht{height:18px}
+.send_new_body{background:#fff;color:#000;margin:0 15px 0 20px}
+.send_new_buttons{float:left;width:450px;padding-bottom:18px;margin-left:20px;text-align:left;display:inline}
+.send_new_buttons .submit_button{float:left;width:173px;height:38px;background:url(../images/send_invitation.gif) no-repeat 0 0;cursor:pointer;border:none;margin:0 15px 0 0}
+.send_new_buttons .cancel_button{float:left;width:98px;height:38px;background:url(../images/send_invitation.gif) no-repeat -188px 0;cursor:pointer;border:none;margin:0}
+.input_snd_contain .input_bg_outer_send{float:left;width:330px}
+.input_snd_contain .input_bg{float:left;width:330px}
+.input_snd_contain .input_fld_send{float:left;width:324px;border:1px solid #bebebe;line-height:30px;height:34px;color:#000;padding:0 2px}
+.input_snd_contain .label_snd{float:left;width:98px;line-height:18px;color:#000;padding:9px 0 0 9px}
+.input_snd_contain .label_snd span{color:red}
+.input_snd_contain .form_row_snd{float:left;width:100%;padding-bottom:18px;display:inline;margin:0}
+
+/*popup starts*/
+#popup{ width:470px;float:left;background:#262626 url(../images/popup_bg.jpg) no-repeat 0 0;color:#e1e1e1;margin:20px 0 0 0;text-align:left;}
+#popup .cancel_btn{position:relative;margin:-27px 0 0 0;float:right;} 
+#popup .content_sec{float:left;width:406px;padding: 50px 0 16px 32px;font-size:13px;}
+#popup .content_sec p{ line-height:19px;padding: 0 0 16px;margin:0;}
+#popup .bot_img{ float:left;width:100%;padding:0;text-align:center}
+#popup h2{ letter-spacing:-1px;font-size:22px;font-weight:bold;line-height:32px;text-transform:uppercase;color:#fff;-webkit-stroke-width: 1.0px;-webkit-stroke-color: #000000;-webkit-fill-color: #fff;text-shadow: 0px 2px 1px #000;padding:0 0 16px;margin:0;}
+#popup h2 span{color:#db6c20;}
+#popup .content_sec .coupon_code{ background:url(../images/coupan_code.jpg) no-repeat 0 0;width:197px;display:block;text-align:center;line-height:37px;height:37px;font-size:18px;font-weight:bold;}
+/*popup starts*/

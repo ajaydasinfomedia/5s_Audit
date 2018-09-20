@@ -1,0 +1,105 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+#php_flag max_input_vars 1500
+
+RewriteBase /5s/
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# login and signup
+RewriteRule ^([A-Za-z0-9-/_]+)/login$ login.php?rt=$1 [qsappend]
+RewriteRule ^login$ login.php?rt=$1 [qsappend]
+
+RewriteRule ^([A-Za-z0-9-/_]+)/forgetusername$ forgetmodule.php?rt=$1 [qsappend]
+RewriteRule ^forgotusername$ forgetmodule.php?rt=$1 [qsappend]
+
+RewriteRule ^([A-Za-z0-9-/_]+)/forgotpassword$ forgetpassword.php?rt=$1 [qsappend]
+RewriteRule ^forgotpassword$ forgetpassword.php?rt=$1 [qsappend]
+
+RewriteRule ^([A-Za-z0-9-/_]+)/recuringpage$ recuringpage.php?rt=$1 [qsappend]
+RewriteRule ^recuringpage$ recuringpage.php?rt=$1 [qsappend]
+
+RewriteRule ^([A-Za-z0-9-/_]+)/thankyou$ thank-you.php?rt=$1 [qsappend]
+RewriteRule ^thankyou$ thank-you.php?rt=$1 [qsappend]
+
+RewriteRule ^([A-Za-z0-9-/_]+)/pricing_plans$ paypal_recuring_form.php?rt=$1 [qsappend]
+RewriteRule ^pricing_plans$ paypal_recuring_form.php?rt=$1 [qsappend]
+
+RewriteRule ^([A-Za-z0-9-/_]+)/setreport$ other_vbarchart.php?rt=$1 [qsappend]
+RewriteRule ^setreport$ other_vbarchart.php?rt=$1 [qsappend]
+
+RewriteRule ^([A-Za-z0-9-/_]+)/mail$ mail.php?rt=$1 [qsappend]
+RewriteRule ^mail$ mail.php?rt=$1 [qsappend]
+
+
+RewriteRule ^([A-Za-z0-9-/_]+)/plans$ recuringform.php?rt=$1 [qsappend]
+RewriteRule ^plans$ recuringform.php?rt=$1 [qsappend]
+
+RewriteRule ^([A-Za-z0-9-/_]+)/recuringinfo$ recuringinfo.php?rt=$1 [qsappend]
+RewriteRule ^recuringinfo$ recuringinfo.php?rt=$1 [qsappend]
+
+# Renew
+
+
+RewriteRule ^([A-Za-z0-9-/_]+)/formrenew$ renewform.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/recuringpage_renew$ recuringpage_renew.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/renewsubscr$ renewsubscr.php?rt=$1 [qsappend]
+
+
+#custome
+
+RewriteRule ^([A-Za-z0-9-/_]+)/recuringpage_custome$ customeform.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/formcustome$ customeform.php?rt=$1 [qsappend]
+
+
+
+
+#index page
+RewriteRule ^([A-Za-z0-9-/_]+)/dashboard$ index.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/statistics$ statistics.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/userlist$ user_list.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/update_userlist$ editnewuserlist.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/logout$ logout.php?rt=$1 [qsappend]
+RewriteRule ^logout$ logout.php?rt=$1 [qsappend]
+
+RewriteRule ^([A-Za-z0-9-/_]+)/editprofile$ editprofile.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/settings$ settings.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/billingpanel$ billing_panel.php?rt=$1 [qsappend]
+
+
+#department and template
+RewriteRule ^([A-Za-z0-9-/_]+)/template_delete$ delete_template_own.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/template_create$ add_template.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/update_owntemplate$ edit_owntemplate.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/update_clienttemplate$ edit_clienttemplate.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/own_template_delete$ delete_template_own.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/client_template_delete$ delete_template_client.php?rt=$1 [qsappend]
+
+RewriteRule ^([A-Za-z0-9-/_]+)/template_view$ view_template.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/department_add$ add_dept.php?rt=$1 [qsappend]
+
+
+RewriteRule ^([A-Za-z0-9-/_]+)/manage_questionnary$ manage_audit_forms.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/view_questionnary$ view_all.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/edit_question$ view_select.php?rt=$1 [qsappend]
+
+#audit
+
+RewriteRule ^([A-Za-z0-9-/_]+)/create_audit$ create_audit.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/questionnairy$ caudit_recordset.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/edit_audit$ edit_audit.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/pdf$ pdf6.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/manage_audit$ manage_audit.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/history$ history.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/report$ vbarchart.php?rt=$1 [qsappend]
+
+#access rights
+
+RewriteRule ^([A-Za-z0-9-/_]+)/accessright$ accessright.php?rt=$1 [qsappend]
+RewriteRule ^([A-Za-z0-9-/_]+)/update_rights$ update_rights.php?rt=$1 [qsappend]
+
+
+
+

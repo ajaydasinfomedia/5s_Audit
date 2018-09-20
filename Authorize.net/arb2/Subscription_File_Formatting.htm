@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 8" />
+<title>Subscription File Formatting</title>
+<link rel="StyleSheet" href="../../../AuthNet.css" type="text/css" />
+<script type="text/javascript" language="JavaScript" src="../../../ehlpdhtm.js"></script><script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addTocInfo("Tools\nAutomated Recurring Billing\nUpload ARB Subscription Files\nSubscription File Formatting");
+addAvenueInfo("Untitled","Tools/Automated_Recurring_Billing/Upload_ARB_Subscription_File/Upload_ARB_Subscription_File.htm","Tools/Automated_Recurring_Billing/Uploaded_ARB_Subscription_File_Status.htm");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../../Merchant_Interface_Online_Help_Files_-_CNP.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+//-->
+//]]></script>
+<h1>Subscription File Formatting</h1>
+<p>Subscription files must be carefully formatted. Any omission of required 
+ data or inaccuracy in field order might result in errors and prevent the 
+ file from being uploaded.</p>
+<p>When submitting a plain text subscription file, fields must be separated 
+ using a comma (,) delimiting character and quotation marks (&quot;) for 
+ the encapsulation character. Or, you can <a href="../../../userguides/ARB_Subscription_Upload_Template.xls" 
+											 target="_blank">click here 
+ to download a Microsoft Excel (.xls) subscription file template</a>. All 
+ you have to do is import subscription data into the Excel template, save 
+ the file in the .csv (comma delimited) format, and you're ready to submit 
+ the file.</p>
+<p><span style="font-weight: bold;"><b>IMPORTANT:</b></span> Regardless of payment 
+ method, ALL fields listed below must be represented in a subscription 
+ file. Data does not need to be present for fields that are optional or 
+ not required; however, these fields should be blank spaces that are properly 
+ encapsulated and delimited (see the <a href="#Sample">sample subscriptions</a> 
+ below). This is necessary so that the payment gateway can correctly read 
+ the information.</p>
+<p>&#160;</p>
+<table class="Style1" style="border: Solid 2px #ffffff;" cellspacing="0px" width="100%">
+	<tr valign="top">
+		<td bgcolor="#CCCCCC">
+		<p class="Terms" style="font-weight: bold; color: 0033aa; 
+									 font-size: 8pt;">ORDER</p></td>
+		<td bgcolor="#CCCCCC"><p class="Terms" style="font-weight: bold; 
+														 color: 0033aa; 
+														 font-size: 8pt;">FIELD 
+		 NAME</p></td>
+		<td bgcolor="#CCCCCC"><p class="Terms" style="font-weight: bold; 
+														 color: 0033aa; 
+														 font-size: 8pt;">REQUIREMENTS</p></td>
+		<td bgcolor="#CCCCCC"><p class="Terms" style="font-weight: bold; 
+														 color: 0033aa; 
+														 font-size: 8pt;" 
+														 align="center">LENGTH</p></td>
+		<td bgcolor="#CCCCCC"><p class="Terms" style="font-weight: bold; 
+														 color: 0033aa; 
+														 font-size: 8pt;">DESCRIPTION</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" 
+									 align="center">1</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Subscription Name</p></td>
+		<td>Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">20</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Merchant-assigned name 
+		 for the subscription.</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">2</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Invoice 
+		 Number</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" 
+					 align="center">20</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">The 
+		 Invoice Number will repeat for each subsequent recurring transaction.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" 
+									 align="center">3</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Description</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">255</p></td>
+		<td><p class="Terms">A description of the subscription.</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">4</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Amount</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" 
+									 align="center">15</p></td>
+		<td><p class="Terms">The amount to be billed 
+		 to the customer each time the transaction is submitted. If a trial 
+		 period is specified, this is the amount that will be billed after 
+		 the trial billing occurrences are completed. Must be a valid amount.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" 
+									 align="center">5</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Payment Method</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">CC, ECHECK</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">If blank, the default 
+		 Payment Method is CC.</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">6</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Credit Card Number</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required 
+		 only if Payment Method = CC</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" 
+									 align="center">22</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Must 
+		 be a numeric value.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" 
+									 align="center">7</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Credit Card Expiration 
+		 Date</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required only if Payment 
+		 Method = CC</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">MMYY, 
+		 MMYYYY</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">8</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Bank 
+		 Account Type</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required 
+		 only if Payment Method = ECHECK</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" 
+									 align="center">CHECKING, BUSINESSCHECKING, 
+		 or SAVINGS</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">If 
+		 blank, the default Account Type is CHECKING.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" 
+									 align="center">9</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">ABA Routing Number</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required only if Payment 
+		 Method = ECHECK</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">9</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Must be a valid 9-digit 
+		 ABA Routing Number.</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">10</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Bank Account Number</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required 
+		 only if Payment Method = ECHECK</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">20</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Must be a numeric value.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">11</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Name on Account</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required only if Payment 
+		 Method = ECHECK</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">40</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">The full name of the 
+		 individual associated with the bank account number provided.</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">12</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Bank Name</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required only if Payment Method = ECHECK</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">50</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">The name of the financial institution associated with the provided 
+		 bank account number.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">13</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Start Date</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">MM/DD/YY</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">The date the subscription 
+		 begins (also the date the initial billing occurs).</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">14</p></td>
+		<td><p class="Terms">Total Occurrences</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">4</p></td>
+		<td><p class="Terms">Must be a numeric value. 
+		 To indicate a subscription with no end date (an ongoing subscription), 
+		 this field must be submitted with a value of "9999."</p>
+		<p class="Terms">If a trial period is specified, this number should 
+		 include the trial occurrences.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">15</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Interval Length</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required</p></td>
+		<td><p class="Terms" align="center">If the Interval Unit is &quot;Month,&quot; 
+		 can only be 1, 2, 3, 6, 12.</p>
+		<p class="Terms" align="center">&#160;</p>
+		<p class="Terms" align="center">If the Interval Unit is &quot;Day,&quot; 
+		 can be any number between seven (7) and 365.</p></td>
+		<td><p class="Terms">The measurement of time between each billing 
+		 occurrence based on the Interval Unit. For example, an Interval 
+		 Length of "2" with an Interval Unit of "Month" would result in 
+		 a billing every other month for the duration of the subscription. 
+		 The day of the month that the billing occurs is dictated by the 
+		 start date.</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">16</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Interval Unit</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required</p></td>
+		<td><p class="Terms" align="center">Month, Day</p></td>
+		<td><p class="Terms">The unit of time, in association 
+		 with the Interval Length, that is used to define the frequency 
+		 of the billing occurrences.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">17</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Trial Occurrences</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">2</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Must be a numeric value. 
+		 This number should be included in Total Occurrences.</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">18</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Trial Amount</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required 
+		 only if a value is provided for Trial Occurrences.</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">15</p></td>
+		<td><p class="Terms">The amount to be charged 
+		 for each billing during the trial period. After the trial period 
+		 has completed, the amount indicated in the Amount field will be 
+		 charged for remaining billing occurrences.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">19</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Customer ID</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">20</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Merchant-assigned identifier 
+		 for the customer.</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">20</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Customer Type</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required 
+		 only if Payment Method = ECHECK</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">I = Individual</p>
+		<p class="Terms" style="font-size: 8pt;" align="center">B = Business</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">21</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Billing First Name</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">50</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">22</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Billing Last Name</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">50</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">23</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Billing Company</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">50</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">24</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Billing Address</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">50</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">25</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Billing City</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">40</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">26</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Billing State</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">40</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">27</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Billing ZIP Code</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">20</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">28</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Billing Country</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">60</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Must 
+		 be a valid two-character country code or full country name (spelled 
+		 in English).</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">29</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Customer Phone</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">25</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">30</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Customer Fax</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">25</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">31</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Customer Email</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">255</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">32</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Shipping First Name</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">50</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">33</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Shipping Last Name</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">50</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">34</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Shipping Company</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">50</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">35</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Shipping Address</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">60</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">36</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Shipping City</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">40</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">37</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Shipping State</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">40</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">38</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Shipping ZIP Code</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">20</p></td>
+		<td><p>&#160;</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">39</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Shipping Country</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">60</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Must be a valid two-character 
+		 country code or full country name (spelled in English).</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">40</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Customer Tax ID/Social Security Number</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">9</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Must 
+		 be a valid 9-digit Tax ID or Social Security Number with no hyphens.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">41</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Driver's License Number</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">50</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">42</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Driver's License State</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">2</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Must 
+		 be a valid two-character state code.</p></td>
+	</tr>
+	<tr valign="top">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">43</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Driver's License Date 
+		 of Birth (DOB)</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Optional</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">YYYY-MM-DD, 
+		 YYYY/MM/DD, MM/DD/YYYY,</p>
+		<p class="Terms" style="font-size: 8pt;" align="center">&#160;MM-DD-YYYY</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">&#160;</p></td>
+	</tr>
+	<tr valign="top" bgcolor="#EFEFEF">
+		<td><p class="Terms" style="font-size: 8pt;" align="center">44</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">eCheck.Net Type</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">Required 
+		 only if Payment Method = ECHECK</p></td>
+		<td><p class="Terms" style="font-size: 8pt;" align="center">CCD, PPD, WEB, TEL</p></td>
+		<td><p class="Terms" style="font-size: 8pt;">If 
+		 blank, when Bank Account Type is Checking or Savings, the default 
+		 eCheck.Net Type is WEB. When Bank Account Type is Business Checking, 
+		 the default eCheck.Net Type is CCD.</p></td>
+	</tr>
+</table>
+<p class="Subheading"><a name="Sample" id="Sample"></a>Sample Subscriptions</p>
+<p class="Subtopic">Sample Credit Card Subscription</p>
+<p>Sample 1 Subscription,Invoice1,This is a sample credit card subscription,10.00,CC, 
+ 0000000000000000,0706,,,,,,03/01/06,3,1,Month,,,Customer ID,,Jane,Doe,,,,,,,,,,,,,,,,,,,,,,,</p>
+<p>&#160;</p>
+<p class="Subtopic">Sample eCheck.Net Subscription</p>
+<p>Sample 2 Subscription,Invoice2,This is a sample eCheck subscription,</p>
+<p>8.00,ECHECK,:,,CHECKING,000000000,000000000000,Jane Doe,</p>
+<p>First Bank,08/01/06,12,1,Month,,,43267,,Jane,Doe,,,,,,,,,,,,,,</p>
+<p>,,,,,,,,WEB</p>
+<p>&#160;</p>
+<p>&#160;</p>
+<p>
+<a href="javascript:void(0);" onclick="var e; if (parseInt(navigator.appVersion)>=4){e=event;}  if (parseInt(navigator.appVersion) &gt;=2 &amp;&amp; typeof(PopupMenu_Invoke) == 'function') PopupMenu_Invoke(e,'','Automated Recurring Billing','../Automated_Recurring_Billing_Main.htm','Upload ARB Subscription File','Upload_ARB_Subscription_File.htm');return false;" title="Related Topics"><img src="../../../ss_btn_related_topics.gif" border="0" height="17" width="81" alt="Related Topics" /></a>
+
+ </p>
+<script type="text/javascript" language="JavaScript">//<![CDATA[
+if (parseInt(navigator.appVersion) >= 3 && typeof (WritePopupMenuLayer) == "function")
+  WritePopupMenuLayer();
+//]]></script><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

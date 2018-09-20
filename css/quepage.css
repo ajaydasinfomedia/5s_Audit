@@ -1,0 +1,52 @@
+.quetotal
+{
+	background: none repeat scroll 0 0 #5FA96C;
+	border: 1px solid #D5D5D5;
+	color: #F7F7F7;
+	font-family: verdana !important; 
+    font-size: 15px !important; 
+	font-weight: bold; 
+	height: 24px;
+	text-align: center;
+	width: 30px;
+}
+.questotal
+{
+	background: none repeat scroll 0 0 #5FA96C;
+	border: 1px solid #D5D5D5;
+	height: 20px;
+	width: 20px;
+	color: #F7F7F7; 
+	font-family: verdana !important; 
+	font-size: 12px !important; 
+	font-weight: bold; 
+	text-align: center;
+}
+.quegrandtotal
+{
+	background: none repeat scroll 0 0 #5FA96C;
+	border: 1px solid #D5D5D5;
+	color: #F7F7F7;
+    font-family: verdana!important; 
+	font-size: 15px!important; 
+	font-weight: bold;
+	height: 25px;
+   	margin-right: 15px;
+	margin-top: 6px;
+	text-align: center;
+	width: 40px;
+}
+.quesetlabel
+{
+	float: left;
+    margin-left: 10px;
+}
+#quetextarea
+{
+	height: auto; 
+	overflow: hidden;
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D5D5D5;
+	color:#494949;
+    font-family: Arial,Helvetica,sans-serif;
+}
